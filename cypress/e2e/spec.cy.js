@@ -7,13 +7,13 @@ describe('Pruebas de Inicio de Sesión', () => {
 
   //happyTest
   it('debería iniciar sesión con credenciales válidas', () => {
-    loginPage.login('tu-usuario-valido', 'tu-contraseña-valida');
+    loginPage.login('LeonelaRodriguez015@hotmail.com', '123456');
     loginPage.verificarInicioDeSesionExitoso();
   });
 
   //unhappyTest
   it('debería mostrar un error con credenciales inválidas', () => {
-    loginPage.login('usuario-invalido', 'contraseña-invalida');
+    loginPage.login('angelo@hotmail.com', '123');
     loginPage.verificarErrorDeInicioDeSesion();
   });
 });

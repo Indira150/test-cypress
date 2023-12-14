@@ -1,5 +1,0 @@
-{
-    "baseUrl": "https://www.automationexercise.com",
-    "testFiles": "*/.{js,ts}",
-    "ignoreTestFiles": [".spec.js", ".spec.ts"]
-  }
