@@ -8,6 +8,10 @@ class LoginPage {
     cy.get('[data-qa=login-password]').type(password);
     cy.get('[data-qa=login-button]').click();
   }
+  
+  logout() {
+    cy.get('[href="/logout"]').click();
+  }
 
   verificarInicioDeSesionExitoso() {
     // Realizar aserciones específicas para un inicio de sesión exitoso
